@@ -1,0 +1,534 @@
+
+/* General */
+
+body {
+    color: black;
+    font-size: 22px;
+    font-family: Arial, Helvetica, sans-serif;
+    position: absolute;
+  }
+
+h1 {
+    color: #DF937F;
+    font-size: 70px;
+    font-family: Arial, Helvetica, sans-serif;
+    letter-spacing: -1px;
+    margin: 0;
+}
+
+h2 {
+    color: black;
+    font-size: 30px;
+    font-family: Arial, Helvetica, sans-serif;
+    letter-spacing: -1px;
+    font-weight: bold;
+}
+
+h3 {
+    color: black;
+    font-size: 24px;
+    font-family: Arial, Helvetica, sans-serif;
+    letter-spacing: -1px;
+    font-weight: bold;
+    margin: 0;
+}
+
+h4 {
+  color: black;
+  font-size: 20px;
+  font-family: Arial, Helvetica, sans-serif;
+  letter-spacing: -1px;
+  font-weight: bold;
+  margin: auto;
+}
+
+p {
+     color: black;
+     font-size: 32px;
+     font-family: Arial, Helvetica, sans-serif;
+     font-weight:300;
+     letter-spacing: -1px;
+     margin-top: 0;
+     line-height: 40px;
+}
+
+.space {
+  margin-top: 200px;
+}
+
+hr {
+  height: 1px;
+  background-color: lightgrey;
+  border: none;
+}
+
+/* Navigation bar */
+
+.navbar {
+   margin: auto;
+   padding-left: 150px;
+   padding-right: 150px;
+}
+
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0%;
+    overflow: hidden;
+    background-color: white;
+    font-weight: bold;
+  }
+
+li {
+    float: left;
+    font-size: 16px;
+  }
+
+li a {
+    display: block;
+    text-align: center;
+    color: black;
+    padding: 14px 16px;
+    text-decoration: none;
+  }
+
+li a:hover {
+    color: #DF937F;
+  }
+
+.topnav-right {
+    float: right;
+  }
+
+li button a {
+    color: white;
+    background-color: black; 
+    border: none;
+    border-radius: 8px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+  }
+
+.navbar button {
+    border: none;
+    border-radius: 8px;
+    background-color: transparent;
+    text-align: center;
+    text-decoration: none;
+    font-weight: bold;
+  }
+  
+  /* Hero */
+
+section.heroimg {
+    height: 600px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.parent {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: 1fr;
+    grid-column-gap: 200px;
+    grid-row-gap: 0px;
+    position: relative;
+}
+  
+.child-1 {
+    width: 400px;
+}
+
+.child-2 {
+    margin-left: 200px;
+    position: absolute;
+    z-index: -1;
+  }
+
+
+/* My Skills */
+
+.myPitch {
+  text-align: center;
+  padding-left: 20%;
+  padding-right: 20%;
+  padding-top: 100px;
+  line-height: 40px;
+}
+
+.skills {
+  float: left;
+  column-width: 325px;
+  line-height: 40px;
+}
+
+.flexContainer {
+  display: flex;
+  margin: auto;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+}
+
+.spaceSkills {
+  margin-top: 75px;
+}
+
+.myToolkit {
+  line-height: 40px;
+  display: grid;
+  justify-content: center;
+}
+
+
+/* My Work */
+
+.workGrid {
+  width: 1000px;
+  margin: auto;
+}
+
+.workContainer {
+  position:relative;
+  width:98%;
+  height:200px;
+  border:1px transparent;
+  padding:5px;
+}
+
+.left{
+  width:50%;
+  float:left;
+  height:100%;
+  border:1px transparent;
+}
+.right{
+  width:48%;
+  float:right;
+  height:100%;
+  border:1px solid transparent;
+}
+.workContainer2 {
+  width:98%;
+  height:500px;
+  border:1px transparent;
+  padding:15px;
+  text-align: center;
+}
+
+.left h2 {
+  margin: auto;
+  padding-bottom: 10px;
+  font-size: 36px;
+}
+
+.workContainer button {
+  padding: 10px;
+  color: white;
+  background-color: black;
+  border-color: transparent;
+  border-radius: 5px;
+  margin-top: 20px;
+  margin-bottom: 20px;
+  font-size: 20px;
+  font-family: Arial, Helvetica, sans-serif;
+  font-weight: bold;
+}
+
+/* Footer */
+
+footer {
+    background-color: white;
+    margin: auto;
+    padding-left: 300px;
+    padding-right: 300px;
+    padding-top: 50px;
+}
+
+.footer-menu {
+  display: block;
+}
+
+.footermenu-right {
+    float: right;
+}
+
+.menuchat-right {
+    float: right;
+    margin: 0;
+}
+
+.menu-chat li a {
+    display: block;
+    text-align: center;
+    color: black;
+    padding-left: 0px;
+    padding-right: 16px;
+    padding-top: 14px;
+    padding-bottom: 14px;
+    text-decoration: none;
+}
+
+.menuchat-right li a {
+    text-align: center;
+    color: black;
+    background-color: transparent;
+    padding-left: 0px;
+    padding-top: 14px;
+    padding-bottom: 14px;
+    text-decoration: none;
+    border-color: black;
+    border-radius: 30px;
+}
+
+
+@media screen and (max-width:600px) { 
+
+body {
+  position: absolute;
+  width: 100vw;
+  font-size: medium;
+}
+
+nav {
+  margin: auto;
+}
+
+.navbar {
+    padding:0%;
+    margin: auto;
+    width: 100%;
+}
+
+.topnav-right {
+  float: inherit;
+}
+
+li button a {
+  margin: 0;
+  align-items: center;
+}
+
+.child-1 {
+  justify-content: center;
+}
+
+.parent {
+  display: grid;
+  grid-template-columns: repeat(1, 1fr);
+  grid-template-rows: 1fr;
+  grid-column-gap: 0px;
+  grid-row-gap: 0px;
+  position: relative;
+}
+
+.parent img {
+  display: none;
+}
+
+section.heroimg {
+  display: flex;
+  flex-direction: column;
+  margin: auto;
+  padding-left: 50px;
+  padding-right: 50px;
+}
+
+.myToolkitchild {
+  padding-left: 50px;
+  padding-right: 50px;
+}
+
+.myWork {
+  padding-left: 50px;
+  padding-right: 50px;
+}
+
+.workGrid {
+  width: 100%;
+  margin: auto;
+}
+
+.workContainer {
+  height: 400px;
+}
+
+.workContainer2 {
+  height: 300px;
+}
+
+.responsive {
+  width: 100%;
+  max-width: 500px;
+  height: auto;
+}
+
+.responsive2 {
+  width: 100%;
+  max-width: 100px;
+  height: auto;
+}
+
+.flexContainer {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+}
+
+.skills {
+  width: 90%;
+  text-align: center;
+  padding-bottom: 40px;
+}
+
+footer {
+  max-width: 100%;
+  padding: 50px;
+}
+
+.footer-menu h2 {
+  font-size: 22px;
+}
+
+.menu-chat h3 {
+  font-size: 18px;
+}
+}
+
+
+@media screen and (max-width:500px) {
+
+body {
+    position: absolute;
+    width: 100vw;
+    font-size: 5vw;
+}
+  
+h1 {
+  font-size: 10vw;
+}
+
+.left h2 {
+  font-size: 8vw;
+}
+
+p {
+  font-size: 7vw;
+}
+
+nav {
+  margin: auto;
+}
+  
+.navbar {
+  padding:0%;
+  margin: auto;
+  width: 100%;
+}
+  
+.topnav-right {
+  float: inherit;
+}
+  
+li button a {
+  margin: 0;
+  align-items: center;
+}
+  
+.child-1 {
+  justify-content: center;
+  width: 100%;
+}
+  
+.parent {
+  display: grid;
+  grid-template-columns: repeat(1, 1fr);
+  grid-template-rows: 1fr;
+  grid-column-gap: 0px;
+  grid-row-gap: 0px;
+  position: relative;
+}
+  
+.parent img {
+  display: none;
+}
+  
+section.heroimg {
+  display: flex;
+  flex-direction: column;
+  margin: auto;
+  padding-left: 50px;
+  padding-right: 50px;
+}
+  
+.myPitch {
+  padding: 20px;
+}
+
+.myToolkitchild {
+    padding-left: 50px;
+    padding-right: 50px;
+}
+  
+  .myWork {
+    padding-left: 50px;
+    padding-right: 50px;
+  }
+  
+  .workGrid {
+    width: 100%;
+    margin: auto;
+  }
+  
+  .workContainer {
+    height: auto;
+  }
+  
+  .workContainer2 {
+    height: auto;
+  }
+  
+  .responsive {
+    width: 100%;
+    max-width: 500px;
+    height: auto;
+  
+  }
+  
+  .responsive2 {
+    width: 50%;
+    max-width: 50px;
+    height: auto;
+    padding-top: 10%;
+    padding-right: 10%;
+  }
+  
+  .flexContainer {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+  }
+  
+  .skills {
+    width: 90%;
+    text-align: center;
+    padding-bottom: 40px;
+  }
+  
+  footer {
+    max-width: 100%;
+    padding: 50px;
+  }
+  
+  .footer-menu h2 {
+    font-size: 22px;
+  }
+  
+  .menu-chat h3 {
+    font-size: 18px;
+  }
+  
+  }
